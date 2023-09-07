@@ -7,7 +7,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(background2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(backgroundIMG.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -54,7 +54,6 @@ nav img {
 
 .nav-links ul li:hover::after {
     width: 100%;
-
 }
 
 .text-box {
@@ -112,7 +111,7 @@ button:hover {
     border: none;
 }
 
-.headerButton{
+.headerButton {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -124,7 +123,7 @@ button:hover {
     cursor: pointer;
 }
 
-.headerButton:hover{
+.headerButton:hover {
     border: 1px solid #ffa845;
     background: #ffa845;
     transition: 1s;
@@ -217,15 +216,15 @@ h3 {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media(max-width: 700px){
-    .row{
+@media(max-width: 700px) {
+    .row {
         flex-direction: column;
     }
 }
 
 /* ------------- Google Maps Location ------------ */
 
-.location{
+.location {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -233,9 +232,8 @@ h3 {
     background: #f5f5ef;
 }
 
-.container{
+.container {
     width: 100%;
-    margin-bottom: 50px;
     margin-top: 50px;
     display: block;
     align-items: center;
@@ -243,25 +241,25 @@ h3 {
     flex-direction: column;
 }
 
-iframe{
+iframe {
     width: 60%;
     height: 500px;
     /* filter: invert(100%); */
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
-@media(max-width: 700px){
-    iframe{
+@media(max-width: 700px) {
+    iframe {
         height: auto;
     }
 }
 
-/* ----------- BİZE ULAŞIN --------- */
+/* ----------- SİZİ ARAYALIM --------- */
 
-.contact{
+.contact {
     margin: 100px auto;
-    width: 80%;    
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(banner.jpg);
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(banner.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -269,62 +267,108 @@ iframe{
     padding: 100px 0;
 }
 
-.contact h1{
+.contact h1 {
     color: #fff;
     padding: 0;
 }
 
-.contact p{
+.contact p {
     color: #fff;
     margin-bottom: 20px;
 }
 
-@media(max-width: 700px){
-    .contact h1{
+@media(max-width: 700px) {
+    .contact h1 {
         font-size: 24px;
     }
 }
 
-/* ------------- sizi arayalım ------- */
+/* ------------- HAKKIMIZDA ------- */
 
-.socialMediaAccounts{
+.socialMediaAccounts {
     width: 100%;
     text-align: center;
     padding: 30px 0;
     background-color: #3a3a3a;
 }
 
-.socialMediaAccounts h2{
+.socialMediaAccounts h1 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
     color: #f5f5ef;
 }
 
-.socialMediaAccounts p{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-    color: #f5f5ef;
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
 }
 
+.about div {
+    height: 300px;
+    width: 300px;
+    color: #fff;
+    margin-right: 40px;
+    text-align: left;
+}
 
+.socialMediaAccounts h4 {
+    color: #777;
+    margin-top: 100px;
+}
 
+.alignLeft {
+	float: left;
+    color: #fff;
+    margin: 0px;
+    list-style: none;
+}
+.alignRight {
+	float: right;
+    color: #fff;
+    margin: 0px;
+    list-style: none;
+}
 
+@media(max-width: 700px) {
+    .about {
+        margin-top: 80px;
+        flex-direction: column;
+    }
+}
 
+@media(max-width: 700px) {
+    .about div{
+        height: 220px;
+    }
+}
 
+#aboutMenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
 
+ #aboutMenu ul li {
+    list-style: none;
+    position: relative;
+}
 
+#aboutMenu ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
 
-
-
-
-
-
-
-
-
-
+#aboutMenu ul li:hover::after {
+    width: 100%;
+}
 
 
 
